@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Approval Prediction</title>
+</head>
+
+<body style="font-family:Arial; text-align:center; margin-top:30px;">
+
+    <h2 style="color:red;">THIS IS MY INDEX PAGE</h2>
+
+    <form action="/predict" method="POST">
+
+        <p>
+            <label>ID</label><br>
+            <input type="number" name="id" required>
+        </p>
+
+        <p>
+            <label>Gender</label><br>
+            <input type="number" name="code_gender" placeholder="0 = Female, 1 = Male" required>
+        </p>
+
+        <p>
+            <label>Own Car</label><br>
+            <input type="number" name="flag_own_car" placeholder="0 = No, 1 = Yes" required>
+        </p>
+
+        <p>
+            <label>Own Realty</label><br>
+            <input type="number" name="flag_own_realty" placeholder="0 = No, 1 = Yes" required>
+        </p>
+
+        <p>
+            <label>Children</label><br>
+            <input type="number" name="cnt_children" required>
+        </p>
+
+        <p>
+            <label>Annual Income</label><br>
+            <input type="number" name="amt_income_total" required>
+        </p>
+
+        <p>
+            <label>Income Type</label><br>
+            <input type="number" name="name_income_type" placeholder="Encoded value" required>
+        </p>
+
+        <p>
+            <label>Education Type</label><br>
+            <input type="number" name="name_education_type" placeholder="Encoded value" required>
+        </p>
+
+        <p>
+            <label>Family Status</label><br>
+            <input type="number" name="name_family_status" placeholder="Encoded value" required>
+        </p>
+
+        <p>
+            <label>Housing Type</label><br>
+            <input type="number" name="name_housing_type" placeholder="Encoded value" required>
+        </p>
+
+        <p>
+            <label>Age (Days)</label><br>
+            <input type="number" name="days_birth" required>
+        </p>
+
+        <p>
+            <label>Employment Days</label><br>
+            <input type="number" name="days_employed" required>
+        </p>
+
+        <p>
+            <label>Mobile Phone</label><br>
+            <input type="number" name="flag_mobil" placeholder="0 or 1" required>
+        </p>
+
+        <p>
+            <label>Work Phone</label><br>
+            <input type="number" name="flag_work_phone" placeholder="0 or 1" required>
+        </p>
+
+        <p>
+            <label>Phone</label><br>
+            <input type="number" name="flag_phone" placeholder="0 or 1" required>
+        </p>
+
+        <p>
+            <label>Email</label><br>
+            <input type="number" name="flag_email" placeholder="0 or 1" required>
+        </p>
+
+        <p>
+            <label>Occupation Type</label><br>
+            <input type="number" name="occupation_type" placeholder="Encoded value" required>
+        </p>
+
+        <p>
+            <label>Family Members</label><br>
+            <input type="number" name="cnt_fam_members" required>
+        </p>
+
+        <p>
+            <label>Months Balance</label><br>
+            <input type="number" name="months_balance" required>
+        </p>
+
+        <p>
+            <label>Status</label><br>
+            <input type="number" name="status" placeholder="Encoded value" required>
+        </p>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+</body>
+</html>
